@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+factorial(int x)
+{
+	if(x>1)
+	{
+		return x*factorial(x-1);
+	}
+}
+int main()
+{
+	int x;
+	cout<<"enter the number :"<<endl;
+	cin>>x;
+	
+	cout<<" FACTORIAL NUMBER IS :"<<endl<<factorial(x);
+	
+	return 0;
+}
