@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+
+void menu()
+{
+	int ch;
+	int b;
+	int c;
+	
+	cout<<"*************************************"<<endl;
+	cout<<"[I].ADDITION"<<endl;
+	cout<<"[II].SUBSTRACTION"<<endl;
+	cout<<"[III].MULTIPLICATION"<<endl;              
+	cout<<"[IV].DIVISON"<<endl;
+	cout<<"[V].MODULOR"<<endl;
+	cout<<"*************************************"<<endl;
+	
+	cout<<"enter ur choice is.."<<endl;
+	cin>>ch;
+	
+	cout<<"Enter ur number 1"<<endl;
+	cin>>b;
+	
+	cout<<"Enter ur number 2"<<endl;
+	cin>>c;
+	
+	switch(ch)
+	{
+		case 1:
+			cout<<"Result for ur Addition Number is:"<<b+c;
+			break;
+			
+		case 2:
+			cout<<"Result for ur Substraction Number is:"<<b-c;
+			break;	
+			
+		case 3:
+			cout<<"Result for ur Multiplication Number is:"<<b*c;
+			break;
+		
+		case 4:
+			cout<<"Result for ur Divison Number is:"<<c/b;
+			break;	
+		
+		case 5:
+			cout<<"Result for ur Modular Number is:"<<c%b;
+			break;	
+	}
+	
+}
+int main()
+{
+	menu();
+		
+	return 0;
+}
